@@ -4,29 +4,30 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+
 /**
- * 加载配置信息：数据库连接，索引库位置
- * @author jinlong
- *
+ * 系统配置读取
+ * <p>Title: Config</p>
+ * <p>Description: </p>
  */
 public class Config {
-	
+
 	private static String connectionUrl;
 	private static String connectionUsername;
 	private static String connectionPassword;
 	private static String indexPath;
 	private static int searchMax;
 	private static int pageSize;
-	private static Properties properties;
 	
-	static {
+	private static Properties properties;
+	static{
 		properties = new Properties();
 		InputStream in = Config.class.getResourceAsStream("/config.properties");
 		try {
 			properties.load(in);
 		} catch (IOException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			try {
 				in.close();
 			} catch (IOException e) {
@@ -53,25 +54,24 @@ public class Config {
 			String size = properties.getProperty("search.pagesize");
 			pageSize = Integer.parseInt(size);
 		}
-	  }
-	
-		public static String getConnectionUrl() {
-			return connectionUrl;
-		}
-		public static String getConnectionUsername() {
-			return connectionUsername;
-		}
-		public static String getConnectionPassword() {
-			return connectionPassword;
-		}
-		public static String getIndexPath() {
-			return indexPath;
-		}
-		public static int getSearchMax() {
-			return searchMax;
-		}
-		public static int getPageSize() {
-			return pageSize;
-		}
+	}
+	public static String getConnectionUrl() {
+		return connectionUrl;
+	}
+	public static String getConnectionUsername() {
+		return connectionUsername;
+	}
+	public static String getConnectionPassword() {
+		return connectionPassword;
+	}
+	public static String getIndexPath() {
+		return indexPath;
+	}
+	public static int getSearchMax() {
+		return searchMax;
+	}
+	public static int getPageSize() {
+		return pageSize;
+	}
 	
 }

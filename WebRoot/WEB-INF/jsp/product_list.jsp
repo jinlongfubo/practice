@@ -115,7 +115,7 @@
 		<div id="search-2013">
 			<div class="i-search ld">
 				<ul id="shelper" class="hide"></ul>
-				<form id="actionForm" action="list.action" method="POST">
+				<form id="actionForm" action="list.do" method="POST">
 				<div class="form">
 					<input type="text" class="text" accesskey="s" name="queryString" id="key" value="${queryString }"
 						autocomplete="off" onkeydown="javascript:if(event.keyCode==13) {query()}">
@@ -487,10 +487,10 @@
         <dl class="fore4">
             <dt><b></b><strong>售后服务</strong></dt>
             <dd>
-                <div><a href="http://myjd.jd.com/afs/help/afshelp.action" target="_blank" rel="nofollow">售后政策</a></div>
+                <div><a href="http://myjd.jd.com/afs/help/afshelp.do" target="_blank" rel="nofollow">售后政策</a></div>
                 <div><a href="http://help.jd.com/help/question-99.html" target="_blank" rel="nofollow">价格保护</a></div>
                 <div><a href="http://help.jd.com/help/question-100.html" target="_blank" rel="nofollow">退款说明</a></div>
-                <div><a href="http://myjd.jd.com/repair/repairs.action" target="_blank" rel="nofollow">返修/退换货</a></div>
+                <div><a href="http://myjd.jd.com/repair/repairs." target="_blank" rel="nofollow">返修/退换货</a></div>
                 <div><a href="http://help.jd.com/help/question-881.html" target="_blank" rel="nofollow">取消订单</a></div>
             </dd>
         </dl>
@@ -500,7 +500,7 @@
                 <div><a href="http://help.jd.com/help/question-79.html" target="_blank">夺宝岛</a></div>
                 <div><a href="http://help.jd.com/help/question-86.html" target="_blank">DIY装机</a></div>
                 <div><a href="http://fuwu.jd.com/" target="_blank" rel="nofollow">延保服务</a></div>
-                <div><a href="http://giftcard.jd.com/market/index.action" target="_blank" rel="nofollow">京东E卡</a></div>
+                <div><a href="http://giftcard.jd.com/market/index.do" target="_blank" rel="nofollow">京东E卡</a></div>
                 <div><a href="http://help.jd.com/help/question-91.html" target="_blank" rel="nofollow">节能补贴</a></div>
                 <div><a href="http://mobile.jd.com/" target="_blank" rel="nofollow">京东通信</a></div>
             </dd>

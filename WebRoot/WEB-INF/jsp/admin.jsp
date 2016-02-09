@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="admin.action" method="post">
+<form action="admin.do" method="post">
 	<input type="submit" value="创建索引库"/>
 	<br>
 	${result } 
